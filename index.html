@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countly</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+  <div id="title">
+    <h1>Countly</h1>
+    <h2>The Answer to Your Counting Woes</h2>
+  </div>
+
+  <div id="bigNumber">
+  
+  </div>
+  
+  <div class="button">
+    <div id="upButton"><p>+1</p></div>
+  </div>
+  <div class="button">
+    <div id="downButton"><p>-1</p></div>
+  </div>
+  <div class="button">
+    <div id="resetButton"><p>Reset to 0</p></div>
+  </div>
+
+<!-- I'm on a bus and the wifi is spotty, so I just downloaded the files -->
+  <script type="text/javascript" src="files/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="files/handlebars-v4.0.5.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  
+  <script type="text/x-handlebars-template" id="count-template">
+    <p class="{{#if high}}tooHigh{{/if}} {{#if low}}tooLow{{/if}}">{{num}}</p>
+  </script>
+
+
+</body>
+</html>
